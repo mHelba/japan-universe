@@ -12,6 +12,9 @@ public class ModItems {
       ModItems.registerItem(
           "onigiri_salmon",
           new Item(new FabricItemSettings().food(ModFoodComponents.ONIGIRI_SALMON)));
+  public static final Item RICE_COOKED =
+      ModItems.registerItem(
+          "rice_cooked", new Item(new FabricItemSettings().food(ModFoodComponents.RICE_COOKED)));
 
   private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, new Identifier(JapanUniverse.MOD_ID, name), item);

@@ -1,8 +1,9 @@
-// 1.20.4	2024-03-31T20:20:48.3115228	Japan Universe/Model Definitions
+// 1.20.4	2024-03-31T21:33:15.168521	Japan Universe/Model Definitions
 3cc7051ec3cd38cade4a9c423cf65bbf6c8885ea assets\japan_universe\models\block\deepslate_tamahagane_ore_block.json
 2eb3200b550a3df730931acd335b6601cd2694cc assets\japan_universe\blockstates\tamahagane_ore_block.json
 323775e8b56507bcc8b94e2e2d1397b43812d69d assets\japan_universe\blockstates\deepslate_tamahagane_ore_block.json
 28f97293ada703be06930c03b536fb7e72eeede2 assets\japan_universe\models\item\onigiri_salmon.json
 f863c0d37a85c78cd1a9394f83aac22cfc53a500 assets\japan_universe\models\item\deepslate_tamahagane_ore_block.json
+10d081f5e3bebd72bfaca6f290ea87277cceb950 assets\japan_universe\models\item\rice_cooked.json
 85821ee02d2b0de9001fedd795863b2cc7828067 assets\japan_universe\models\block\tamahagane_ore_block.json
 53e496679d1ca20dda58c50f56f47ed011414c50 assets\japan_universe\models\item\tamahagane_ore_block.json
