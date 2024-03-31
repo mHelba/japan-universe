@@ -21,6 +21,7 @@ public class ModItemGroups {
               .entries(
                   (displayContext, entries) -> {
                     entries.add(ModBlocks.TAMAHAGANE_ORE_BLOCK);
+                    entries.add(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
                   })
               .build());
 

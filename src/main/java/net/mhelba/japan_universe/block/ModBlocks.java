@@ -15,6 +15,10 @@ public class ModBlocks {
   public static final Block TAMAHAGANE_ORE_BLOCK =
       ModBlocks.registerBlock(
           "tamahagane_ore_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+  public static final Block DEEPSLATE_TAMAHAGANE_ORE_BLOCK =
+      ModBlocks.registerBlock(
+          "deepslate_tamahagane_ore_block",
+          new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
 
   private static Block registerBlock(String name, Block block) {
     ModBlocks.registerBlockItem(name, block);
