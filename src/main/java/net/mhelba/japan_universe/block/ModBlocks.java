@@ -5,20 +5,26 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mhelba.japan_universe.JapanUniverse;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
   public static final Block TAMAHAGANE_ORE_BLOCK =
       ModBlocks.registerBlock(
-          "tamahagane_ore_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+          "tamahagane_ore_block",
+          new ExperienceDroppingBlock(
+              UniformIntProvider.create(0, 2), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
   public static final Block DEEPSLATE_TAMAHAGANE_ORE_BLOCK =
       ModBlocks.registerBlock(
           "deepslate_tamahagane_ore_block",
-          new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
+          new ExperienceDroppingBlock(
+              UniformIntProvider.create(0, 2),
+              FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
 
   private static Block registerBlock(String name, Block block) {
     ModBlocks.registerBlockItem(name, block);
