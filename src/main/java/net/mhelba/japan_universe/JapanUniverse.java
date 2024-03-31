@@ -3,6 +3,7 @@ package net.mhelba.japan_universe;
 import net.fabricmc.api.ModInitializer;
 import net.mhelba.japan_universe.block.ModBlocks;
 import net.mhelba.japan_universe.item.ModItemGroups;
+import net.mhelba.japan_universe.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +16,7 @@ public class JapanUniverse implements ModInitializer {
     LOGGER.info("Hello Fabric world!");
     ModItemGroups.registerItemGroups();
     ModBlocks.registerModBlocks();
+
+    ModWorldGeneration.generateModWorldGen();
   }
 }
