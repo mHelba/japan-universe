@@ -3,6 +3,7 @@ package net.mhelba.japan_universe.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.mhelba.japan_universe.block.ModBlocks;
+import net.mhelba.japan_universe.block.custom.RiceCropBlock;
 import net.mhelba.japan_universe.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -17,6 +18,8 @@ public class ModModelProvider extends FabricModelProvider {
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAMAHAGANE_ORE_BLOCK);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
+
+    blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5);
   }
 
   @Override

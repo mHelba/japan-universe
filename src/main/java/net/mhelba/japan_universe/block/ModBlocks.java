@@ -3,6 +3,7 @@ package net.mhelba.japan_universe.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mhelba.japan_universe.JapanUniverse;
+import net.mhelba.japan_universe.block.custom.RiceCropBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -25,6 +26,12 @@ public class ModBlocks {
           new ExperienceDroppingBlock(
               UniformIntProvider.create(0, 2),
               FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
+
+  public static final Block RICE_CROP =
+      Registry.register(
+          Registries.BLOCK,
+          new Identifier(JapanUniverse.MOD_ID, "rice_crop"),
+          new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
   private static Block registerBlock(String name, Block block) {
     ModBlocks.registerBlockItem(name, block);

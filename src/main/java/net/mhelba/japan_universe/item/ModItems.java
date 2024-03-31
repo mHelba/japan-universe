@@ -2,6 +2,8 @@ package net.mhelba.japan_universe.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.mhelba.japan_universe.JapanUniverse;
+import net.mhelba.japan_universe.block.ModBlocks;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,6 +14,9 @@ public class ModItems {
       ModItems.registerItem(
           "onigiri_salmon",
           new Item(new FabricItemSettings().food(ModFoodComponents.ONIGIRI_SALMON)));
+  public static final Item RICE_RAW =
+      ModItems.registerItem(
+          "rice_raw", new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings()));
   public static final Item RICE_WHITE =
       ModItems.registerItem("rice_white", new Item(new FabricItemSettings()));
   public static final Item RICE_COOKED =

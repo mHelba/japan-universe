@@ -21,6 +21,7 @@ public class ModItemGroups {
               .entries(
                   (displayContext, entries) -> {
                     entries.add(ModItems.ONIGIRI_SALMON);
+                    entries.add(ModItems.RICE_RAW);
                     entries.add(ModItems.RICE_WHITE);
                     entries.add(ModItems.RICE_COOKED);
 
