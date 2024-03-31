@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "japan_universe:block/tamahagane_ore_block"
+  }
+}
