@@ -1,3 +1,7 @@
-// 1.20.4	2024-03-31T21:49:44.2095076	Japan Universe/Recipes
+// 1.20.4	2024-03-31T22:22:09.7182606	Japan Universe/Recipes
+7f39fa8f9b67c4fedbac69f8dddcae30d35f1654 data\japan_universe\advancements\recipes\misc\rice_cooked_from_smelting_rice_white.json
+7c9c75929a75bd23d66f0bb42490016010242dcf data\japan_universe\advancements\recipes\misc\rice_cooked_from_blasting_rice_white.json
 e2f2830542227aeeebd37cb30cb4157c652ed747 data\japan_universe\advancements\recipes\misc\onigiri_salmon.json
+1e1961296ed7339f1408e564a7b038a589f5f837 data\japan_universe\recipes\rice_cooked_from_blasting_rice_white.json
 cb4c1346db2f31ddc80d166ba8fa352ddc32d891 data\japan_universe\recipes\onigiri_salmon.json
+8ca12c9429f16be1b585d5584f4ee33389b803cd data\japan_universe\recipes\rice_cooked_from_smelting_rice_white.json

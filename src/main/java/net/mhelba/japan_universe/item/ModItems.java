@@ -12,6 +12,8 @@ public class ModItems {
       ModItems.registerItem(
           "onigiri_salmon",
           new Item(new FabricItemSettings().food(ModFoodComponents.ONIGIRI_SALMON)));
+  public static final Item RICE_WHITE =
+      ModItems.registerItem("rice_white", new Item(new FabricItemSettings()));
   public static final Item RICE_COOKED =
       ModItems.registerItem(
           "rice_cooked", new Item(new FabricItemSettings().food(ModFoodComponents.RICE_COOKED)));

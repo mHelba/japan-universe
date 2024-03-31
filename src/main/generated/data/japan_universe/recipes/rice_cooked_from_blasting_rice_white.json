@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "rice_cooked",
+  "ingredient": {
+    "item": "japan_universe:rice_white"
+  },
+  "result": "japan_universe:rice_cooked"
+}
