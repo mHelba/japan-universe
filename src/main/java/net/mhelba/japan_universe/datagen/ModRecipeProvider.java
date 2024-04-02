@@ -5,9 +5,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.mhelba.japan_universe.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.SmokingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -18,11 +21,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     super(output);
   }
 
+  private static void offerSmoking(
+      RecipeExporter exporter,
+      List<ItemConvertible> inputs,
+      RecipeCategory category,
+      ItemConvertible output,
+      float experience,
+      int cookingTime,
+      String group) {
+    RecipeProvider.offerMultipleOptions(
+        exporter,
+        RecipeSerializer.SMOKING,
+        SmokingRecipe::new,
+        inputs,
+        category,
+        output,
+        experience,
+        cookingTime,
+        group,
+        "_from_smoking");
+  }
+
   @Override
   public void generate(RecipeExporter exporter) {
     ModRecipeProvider.offerSmelting(
         exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 200, "rice_cooked");
     ModRecipeProvider.offerBlasting(
+        exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 100, "rice_cooked");
+    ModRecipeProvider.offerSmoking(
         exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 100, "rice_cooked");
 
     ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ONIGIRI_SALMON, 8)
