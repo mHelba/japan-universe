@@ -20,6 +20,11 @@ public class ModItemGroups {
               .icon(() -> new ItemStack(ModBlocks.TAMAHAGANE_ORE_BLOCK))
               .entries(
                   (displayContext, entries) -> {
+                    entries.add(ModItems.ONIGIRI_SALMON);
+                    entries.add(ModItems.RICE_RAW);
+                    entries.add(ModItems.RICE_WHITE);
+                    entries.add(ModItems.RICE_COOKED);
+
                     entries.add(ModBlocks.TAMAHAGANE_ORE_BLOCK);
                     entries.add(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
                   })
