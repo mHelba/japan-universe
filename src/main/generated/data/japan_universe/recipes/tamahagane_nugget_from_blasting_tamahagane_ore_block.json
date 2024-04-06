@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "tamahagane_nugget",
+  "ingredient": {
+    "item": "japan_universe:tamahagane_ore_block"
+  },
+  "result": "japan_universe:tamahagane_nugget"
+}

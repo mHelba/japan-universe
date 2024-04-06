@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "tamahagane_nugget",
+  "ingredient": {
+    "item": "japan_universe:deepslate_tamahagane_ore_block"
+  },
+  "result": "japan_universe:tamahagane_nugget"
+}

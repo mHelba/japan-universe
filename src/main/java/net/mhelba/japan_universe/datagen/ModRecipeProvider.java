@@ -3,6 +3,7 @@ package net.mhelba.japan_universe.datagen;
 import java.util.List;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.mhelba.japan_universe.block.ModBlocks;
 import net.mhelba.japan_universe.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
@@ -15,7 +16,10 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-  private static final List<ItemConvertible> SMELTABLES = List.of(ModItems.RICE_WHITE);
+  private static final List<ItemConvertible> SMELTABLES_TO_RICE_COOKED =
+      List.of(ModItems.RICE_WHITE);
+  private static final List<ItemConvertible> SMELTABLES_TO_TAMAHAGANE_NUGGET =
+      List.of(ModBlocks.TAMAHAGANE_ORE_BLOCK, ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
 
   public ModRecipeProvider(FabricDataOutput output) {
     super(output);
@@ -45,11 +49,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
   @Override
   public void generate(RecipeExporter exporter) {
     ModRecipeProvider.offerSmelting(
-        exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 200, "rice_cooked");
+        exporter,
+        SMELTABLES_TO_RICE_COOKED,
+        RecipeCategory.MISC,
+        ModItems.RICE_COOKED,
+        0.7f,
+        200,
+        "rice_cooked");
     ModRecipeProvider.offerBlasting(
-        exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 100, "rice_cooked");
+        exporter,
+        SMELTABLES_TO_RICE_COOKED,
+        RecipeCategory.MISC,
+        ModItems.RICE_COOKED,
+        0.7f,
+        100,
+        "rice_cooked");
     ModRecipeProvider.offerSmoking(
-        exporter, SMELTABLES, RecipeCategory.MISC, ModItems.RICE_COOKED, 0.7f, 100, "rice_cooked");
+        exporter,
+        SMELTABLES_TO_RICE_COOKED,
+        RecipeCategory.MISC,
+        ModItems.RICE_COOKED,
+        0.7f,
+        100,
+        "rice_cooked");
+
+    ModRecipeProvider.offerSmelting(
+        exporter,
+        SMELTABLES_TO_TAMAHAGANE_NUGGET,
+        RecipeCategory.MISC,
+        ModItems.TAMAHAGANE_NUGGET,
+        1f,
+        200,
+        "tamahagane_nugget");
+    ModRecipeProvider.offerBlasting(
+        exporter,
+        SMELTABLES_TO_TAMAHAGANE_NUGGET,
+        RecipeCategory.MISC,
+        ModItems.TAMAHAGANE_NUGGET,
+        1f,
+        100,
+        "tamahagane_nugget");
 
     ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ONIGIRI_SALMON, 8)
         .pattern(" R ")
