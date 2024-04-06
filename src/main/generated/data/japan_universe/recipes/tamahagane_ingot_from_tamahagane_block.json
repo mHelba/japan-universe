@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tamahagane_ingot",
+  "ingredients": [
+    {
+      "item": "japan_universe:tamahagane_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "japan_universe:tamahagane_ingot"
+  }
+}
