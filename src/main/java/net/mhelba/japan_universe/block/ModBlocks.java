@@ -28,6 +28,10 @@ public class ModBlocks {
               UniformIntProvider.create(0, 2),
               FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
 
+  public static final Block TAMAHAGANE_BLOCK =
+      ModBlocks.registerBlock(
+          "tamahagane_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
   public static final Block RICE_CROP =
       Registry.register(
           Registries.BLOCK,

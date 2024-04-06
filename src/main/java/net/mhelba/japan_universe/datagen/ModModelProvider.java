@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAMAHAGANE_ORE_BLOCK);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAMAHAGANE_BLOCK);
 
     blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5);
 
