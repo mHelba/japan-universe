@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
 
     blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+
+    blockStateModelGenerator.registerSimpleState(ModBlocks.RICE_GRINDER);
   }
 
   @Override

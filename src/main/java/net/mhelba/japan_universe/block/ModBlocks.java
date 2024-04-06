@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mhelba.japan_universe.JapanUniverse;
 import net.mhelba.japan_universe.block.custom.RiceCropBlock;
+import net.mhelba.japan_universe.block.custom.RiceGrinderBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -32,6 +33,11 @@ public class ModBlocks {
           Registries.BLOCK,
           new Identifier(JapanUniverse.MOD_ID, "rice_crop"),
           new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+  public static final Block RICE_GRINDER =
+      ModBlocks.registerBlock(
+          "rice_grinder",
+          new RiceGrinderBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
   private static Block registerBlock(String name, Block block) {
     ModBlocks.registerBlockItem(name, block);

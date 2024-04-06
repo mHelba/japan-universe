@@ -25,6 +25,8 @@ public class ModItemGroups {
                     entries.add(ModItems.RICE_WHITE);
                     entries.add(ModItems.RICE_COOKED);
 
+                    entries.add(ModBlocks.RICE_GRINDER);
+
                     entries.add(ModBlocks.TAMAHAGANE_ORE_BLOCK);
                     entries.add(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
                   })

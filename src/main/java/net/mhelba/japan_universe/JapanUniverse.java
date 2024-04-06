@@ -2,8 +2,10 @@ package net.mhelba.japan_universe;
 
 import net.fabricmc.api.ModInitializer;
 import net.mhelba.japan_universe.block.ModBlocks;
+import net.mhelba.japan_universe.block.entity.ModBlockEntities;
 import net.mhelba.japan_universe.item.ModItemGroups;
 import net.mhelba.japan_universe.item.ModItems;
+import net.mhelba.japan_universe.screen.ModScreenHandlers;
 import net.mhelba.japan_universe.util.ModCustomTrades;
 import net.mhelba.japan_universe.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
@@ -21,6 +23,9 @@ public class JapanUniverse implements ModInitializer {
     ModBlocks.registerModBlocks();
 
     ModCustomTrades.registerCustomTrades();
+
+    ModBlockEntities.registerBlockEntities();
+    ModScreenHandlers.registerScreenHandlers();
 
     ModWorldGeneration.generateModWorldGen();
   }
