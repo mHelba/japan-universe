@@ -23,6 +23,11 @@ public class ModItems {
       ModItems.registerItem(
           "rice_cooked", new Item(new FabricItemSettings().food(ModFoodComponents.RICE_COOKED)));
 
+  public static final Item TAMAHAGANE_NUGGET =
+      ModItems.registerItem("tamahagane_nugget", new Item(new FabricItemSettings()));
+  public static final Item TAMAHAGANE_INGOT =
+      ModItems.registerItem("tamahagane_ingot", new Item(new FabricItemSettings()));
+
   private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, new Identifier(JapanUniverse.MOD_ID, name), item);
   }

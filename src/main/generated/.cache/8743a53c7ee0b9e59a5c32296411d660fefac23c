@@ -1,5 +1,6 @@
-// 1.20.4	2024-04-06T01:59:21.3944925	Japan Universe/Model Definitions
+// 1.20.4	2024-04-06T23:43:35.7299702	Japan Universe/Model Definitions
 8ce06dcbfa8fc34d93249ba679a9ab5cdefb59a0 assets\japan_universe\models\block\rice_crop_stage5.json
+f17d0f11dcb68f6028462a9c2c822fa9afef33cb assets\japan_universe\models\item\tamahagane_nugget.json
 ba70c00887b7a2a8127ef19590819d39ea89d5ab assets\japan_universe\blockstates\rice_grinder.json
 c7a9b95d6190f331bf98f4ff357f58a8e3a0f50e assets\japan_universe\models\block\rice_crop_stage2.json
 8223ecb12b13f7853efaa4c86020fd5f62331a66 assets\japan_universe\models\item\rice_white.json
@@ -8,6 +9,7 @@ c7a9b95d6190f331bf98f4ff357f58a8e3a0f50e assets\japan_universe\models\block\rice
 f863c0d37a85c78cd1a9394f83aac22cfc53a500 assets\japan_universe\models\item\deepslate_tamahagane_ore_block.json
 85821ee02d2b0de9001fedd795863b2cc7828067 assets\japan_universe\models\block\tamahagane_ore_block.json
 dfb4714bf28d89a5f5f7358a0f8f24b9b093131c assets\japan_universe\models\block\rice_crop_stage4.json
+57666bcba6e861cdcedc1fd8b9d0721fcc7528e6 assets\japan_universe\models\item\tamahagane_ingot.json
 62ea59b1b93c84d8c4cc89627a5514ebe3b07cd6 assets\japan_universe\models\item\rice_raw.json
 33ea2b691aa99a199988cb6617a3b7f5019213b2 assets\japan_universe\models\block\rice_crop_stage1.json
 d42e7f9627f19c9ac66610c512e9b0b6a3fed1da assets\japan_universe\models\item\rice_grinder.json

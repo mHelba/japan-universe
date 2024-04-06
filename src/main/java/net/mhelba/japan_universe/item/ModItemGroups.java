@@ -24,6 +24,8 @@ public class ModItemGroups {
                     entries.add(ModItems.RICE_RAW);
                     entries.add(ModItems.RICE_WHITE);
                     entries.add(ModItems.RICE_COOKED);
+                    entries.add(ModItems.TAMAHAGANE_NUGGET);
+                    entries.add(ModItems.TAMAHAGANE_INGOT);
 
                     entries.add(ModBlocks.RICE_GRINDER);
 
