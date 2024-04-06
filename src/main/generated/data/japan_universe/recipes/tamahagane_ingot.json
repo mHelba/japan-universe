@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    },
+    {
+      "item": "japan_universe:tamahagane_nugget"
+    }
+  ],
+  "result": {
+    "item": "japan_universe:tamahagane_ingot"
+  }
+}

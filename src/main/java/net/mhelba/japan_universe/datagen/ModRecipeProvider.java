@@ -90,6 +90,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         100,
         "tamahagane_nugget");
 
+    ModRecipeProvider.offerCompactingRecipe(
+        exporter, RecipeCategory.MISC, ModItems.TAMAHAGANE_INGOT, ModItems.TAMAHAGANE_NUGGET);
+
     ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ONIGIRI_SALMON, 8)
         .pattern(" R ")
         .pattern("RSR")
