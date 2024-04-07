@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.mhelba.japan_universe.block.ModBlocks;
 import net.mhelba.japan_universe.item.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -118,5 +119,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             ModRecipeProvider.conditionsFromItem(Items.DRIED_KELP))
         .offerTo(
             exporter, new Identifier(ModRecipeProvider.getRecipeName(ModItems.ONIGIRI_SALMON)));
+
+    ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RICE_GRINDER, 1)
+        .pattern("SFS")
+        .pattern("TRT")
+        .pattern("TTT")
+        .input('S', Blocks.STONE)
+        .input('F', Items.FLINT)
+        .input('R', Items.REDSTONE)
+        .input('T', ModItems.TAMAHAGANE_INGOT)
+        .criterion(
+            ModRecipeProvider.hasItem(Blocks.STONE),
+            ModRecipeProvider.conditionsFromItem(Blocks.STONE))
+        .criterion(
+            ModRecipeProvider.hasItem(Items.FLINT),
+            ModRecipeProvider.conditionsFromItem(Items.FLINT))
+        .criterion(
+            ModRecipeProvider.hasItem(Items.REDSTONE),
+            ModRecipeProvider.conditionsFromItem(Items.REDSTONE))
+        .criterion(
+            ModRecipeProvider.hasItem(ModItems.TAMAHAGANE_INGOT),
+            ModRecipeProvider.conditionsFromItem(ModItems.TAMAHAGANE_INGOT))
+        .offerTo(exporter, new Identifier(ModRecipeProvider.getRecipeName(ModBlocks.RICE_GRINDER)));
   }
 }
