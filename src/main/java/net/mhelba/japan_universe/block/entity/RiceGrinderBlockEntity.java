@@ -94,6 +94,10 @@ public class RiceGrinderBlockEntity extends BlockEntity
     return new RiceGrinderScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
   }
 
+  private boolean isReceivingRedstonePower(World world, BlockPos pos) {
+    return world.isReceivingRedstonePower(pos);
+  }
+
   public void tick(World world, BlockPos pos, BlockState state) {
     if (world.isClient()) {
       return;
@@ -101,8 +105,10 @@ public class RiceGrinderBlockEntity extends BlockEntity
 
     if (this.isOutputSlotEmptyOrReceivable()) {
       if (this.hasRecipe()) {
-        this.increaseCraftProgress();
-        markDirty(world, pos, state);
+        if (this.isReceivingRedstonePower(world, pos)) {
+          this.increaseCraftProgress();
+          markDirty(world, pos, state);
+        }
 
         if (hasCraftingFinished()) {
           this.craftItem();
