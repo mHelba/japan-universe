@@ -18,8 +18,11 @@ public class ModModelProvider extends FabricModelProvider {
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAMAHAGANE_ORE_BLOCK);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TAMAHAGANE_ORE_BLOCK);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAMAHAGANE_BLOCK);
 
     blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+
+    blockStateModelGenerator.registerSimpleState(ModBlocks.RICE_GRINDER);
   }
 
   @Override
@@ -27,5 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.ONIGIRI_SALMON, Models.GENERATED);
     itemModelGenerator.register(ModItems.RICE_WHITE, Models.GENERATED);
     itemModelGenerator.register(ModItems.RICE_COOKED, Models.GENERATED);
+    itemModelGenerator.register(ModItems.TAMAHAGANE_NUGGET, Models.GENERATED);
+    itemModelGenerator.register(ModItems.TAMAHAGANE_INGOT, Models.GENERATED);
   }
 }

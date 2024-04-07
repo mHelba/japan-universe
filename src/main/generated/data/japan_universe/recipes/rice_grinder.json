@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "T": {
+      "item": "japan_universe:tamahagane_ingot"
+    }
+  },
+  "pattern": [
+    "SFS",
+    "TRT",
+    "TTT"
+  ],
+  "result": {
+    "item": "japan_universe:rice_grinder"
+  }
+}
